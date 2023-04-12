@@ -1,17 +1,46 @@
 ﻿//VARIABLES DECLARATION
 Console.Write("Inserisci il titolo del libro:");
 string Title = Console.ReadLine();
+
 Console.Write("Inserisci il nome dell'autore:");
 string Author = Console.ReadLine();
-long CodeISBN = 4234567891;
-uint NumberOfPages = 1000;
-float BookWeight = 1.2f; //kilograms
-uint BookWidth = 25; //centimeters
-uint BookHeight = 40; //centimeters
-uint BookDepth = 4; //centimeters
-float BookRating = 4.5f;
-uint NumberOfReviews = 23453;
+
+Console.Write("Inserisci il codice ISBN:");
+string CodeISBNString = Console.ReadLine();
+long CodeISBN = long.Parse(CodeISBNString);
+
+Console.Write("Inserisci il numero di pagine:");
+string NumberOfPagesString = Console.ReadLine();
+uint NumberOfPages = uint.Parse(NumberOfPagesString);
+
+Console.Write("Inserisci il peso del libro (kg):");
+string BookWeightString = Console.ReadLine();
+float BookWeight = float.Parse(BookWeightString); //kilograms
+
+Console.Write("Inserisci la larghezza del libro (cm):");
+string BookWidthString = Console.ReadLine();
+uint BookWidth = uint.Parse(BookWidthString); //centimeters
+
+Console.Write("Inserisci l'altezza del libro (cm):");
+string BookHeightString = Console.ReadLine();
+uint BookHeight = uint.Parse(BookHeightString); //centimeter
+
+Console.Write("Inserisci la profondità del libro (cm):");
+string BookDepthString = Console.ReadLine();
+uint BookDepth = uint.Parse(BookDepthString); //centimeter
+
+Console.Write("Inserisci la valutazione media del libro:");
+string BookRatingString= Console.ReadLine();
+float BookRating = float.Parse(BookRatingString);
+
+Console.Write("Inserisci il numero di recensioni:");
+string NumberOfReviewsString = Console.ReadLine();
+uint NumberOfReviews = uint.Parse(NumberOfReviewsString);
+
+//Console.Write("Inserisci il nome dell'autore:");
 bool IsKindleAvailable = true;
+
+//Console.Write("Inserisci il nome dell'autore:");
 bool IsFlexibleCoverAvailable = true;
 
 string KindleAvailability = "";
